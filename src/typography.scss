@@ -1,0 +1,59 @@
+// Import font from google fonts
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=UnifrakturMaguntia&display=swap");
+
+// Define font variables
+$font-family-base: "Oswald", sans-serif;
+$font-family-display: "UnifrakturMaguntia", cursive;
+
+// Override Bootstrap's variables
+$body-font-family: $font-family-base;
+
+// Define custom styles
+body {
+    font-family: $font-family-base;
+}
+
+// Set the base font size
+html {
+    font-size: 18px;
+}
+
+// Use the responsive font size in your styles
+.mainProgramContainer {
+    font-size: 1.2rem;
+    h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+}
+
+// Define font sizes for different screen sizes
+@media (min-width: 576px) {
+    html {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 24px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 28px;
+    }
+}

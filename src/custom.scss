@@ -1,0 +1,137 @@
+// Import other custom stylesheets
+@import "typography.scss";
+
+// Define custom variables
+$main-color: #0c0c0c;
+$accent-color: #aec6cf;
+$body-bg: $main-color;
+$body-color: black;
+
+// Define custom styles
+body {
+    background-color: $body-bg;
+    color: $body-color;
+}
+
+.mainProgramContainer {
+    background-color: $accent-color;
+    max-width: 750px;
+    padding: 30px;
+    margin: 50px;
+    text-align: center;
+    border-radius: 10px;
+
+    .mainProgramHeaderRow {
+        padding-bottom: 30px;
+    }
+
+    .mainProgramTimeInputForms {
+        .mainProgramTimeInputFormsGroup {
+            text-align: center;
+            .form-group-label {
+                display: inline-block;
+            }
+            .form-group-inputgroup {
+                display: flex;
+                justify-content: center;
+            }
+            .form-control-input {
+                display: inline-block;
+                width: auto;
+                max-width: 150px;
+                text-align: right;
+                padding-right: 10px;
+                color: $accent-color;
+                height: 100%;
+                border-radius: 0px;
+                margin: 0px;
+            }
+        }
+    }
+}
+
+.soundControlRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn-custom {
+        max-width: 150px;
+        width: auto;
+        height: auto;
+        background-color: $main-color;
+        border: 0px;
+        padding: 5px 10px;
+        display: inline-block;
+    }
+
+    .range-btn {
+        padding: 0px 5px;
+        display: inline-block;
+    }
+
+    .volumeRange {
+        margin-left: 10px;
+        width: 150px;
+    }
+
+    .selectNoiseLabel {
+        display: inline-block;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+
+    .selectNoiseDropdown {
+        color: $accent-color;
+        max-width: 300px;
+    }
+}
+
+.timerContainer {
+    background-color: $main-color;
+    color: $accent-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+// Import Bootstrap and its default variables
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.btn-primary {
+    @include button-variant(
+        $main-color,
+        darken($main-color, 7.5%),
+        darken($main-color, 10%),
+        lighten($main-color, 5%),
+        lighten($main-color, 10%),
+        darken($main-color, 30%)
+    );
+    color: $accent-color;
+    background-color: $main-color;
+    &:hover {
+        color: $accent-color;
+        background-color: $main-color;
+    }
+}
+
+.btn-outline-primary {
+    @include button-outline-variant($main-color, #222222, lighten($main-color, 5%), $main-color);
+}
