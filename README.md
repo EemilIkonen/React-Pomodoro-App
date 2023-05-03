@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# POMODORO APP
+## THIS VERSION IS WIP
+### Known issues:
+- Setting values to zero and pressing restart causes the notification sound to infinite loop and crashes chrome
+- Time boxes dont allow backspace properly. Broke when adding testing for valuerange 0-99, should be quite simple change
+- Chrome doesn't loop sound properly
+- Sounds are different volume (The original tracks have different volume)
+- Sometimes the selected sound wont play (Something to do with not being able to recieve the sound file. Error logs in console)
+- Some weirdness with the audio in general
+- Volume slider doesn't affect notification sound. Issue caused by app structure.
+- Some files still contain default bloat/settings from create-react-app. I didn't feel comfortable deleting alot of it.
+- Title and picture use default values. Should change to custom.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Future changes:
+- Refactor some returns to use <Container>'s and follow that structure instead on <div>
+- Rebuild audio feature to work more reliably
+- Add todos
+- Clean up SCSS files
+- Redo part of app.js to use components instead of one big return
+- Refactor Play/Pause/Restart functionality to work more fluent
 
-## Available Scripts
+### Completed features:
+- Customizable timer and repetitions
+- Start/pause/restart
+- Multiple background noise choices (Including option for None)
+- Notification for timer change
+- Volume/mute controls
+- Persistant states for values that i felt like needed it
+- Decent mobile scaling
+- Code commented
 
-In the project directory, you can run:
+### Used technologies:
+- React
+- Bootstrap
+- react-bootstrap
+- create-react-app
+- SCSS
+- useSound
+- useStickyState (Copied from [www.joshwcomeau.com](https://www.joshwcomeau.com/react/persisting-react-state-in-localstorage/#keeping-localstorage-in-sync-5))
+  - Felt this was needed to make the app work better, but didn't have the knowledge to do it myself
+- Sound files from [freesound.org](https://freesound.org/)
+  - All used sound files fall under Creative Commons 0
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
