@@ -36,7 +36,7 @@
 - create-react-app
 - SCSS
 - useSound
-- useStickyState (Copied from [www.joshwcomeau.com](https://www.joshwcomeau.com/react/persisting-react-state-in-localstorage/#keeping-localstorage-in-sync-5))
+- useStickyState (Thanks to [www.joshwcomeau.com](https://www.joshwcomeau.com/react/persisting-react-state-in-localstorage/#keeping-localstorage-in-sync-5))
   - Felt this was needed to make the app work better, but didn't have the knowledge to do it myself
 - Sound files from [freesound.org](https://freesound.org/)
   - All used sound files fall under Creative Commons 0
